@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  background: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+  color: rgb(40, 35, 35);
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Antonio", sans-serif;
+}
+
+main {
+  max-width: 100%;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+.avatar {
+  width: 414px;
+  height: 414px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 30px rgba(103, 0, 89, 0.935);
+}
+
+.avatar:hover,
+.card:hover {
+  transform: scale(1.01);
+}
+
+.bg-purple1 {
+  background: linear-gradient(to bottom right, #654ea3, #eaafc8);
+}
+
+.bg-purple2 {
+  background: linear-gradient(to bottom right, #ff9a9e, #fecfef);
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    text-align: center;
+  }
+  section {
+    display: inline-block;
+  }
+}
+
+section {
+  width: 30%;
+  margin-right: 40px;
+}
+
+.list {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 45px;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+}
+
+.list li:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -38px;
+  width: 28px;
+  height: 28px;
+  background: #e3bbd8;
+  color: #6e1053;
+  text-align: center;
+  line-height: 28px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid #6e1053;
+}
+
+.list li {
+  color: #6e1053;
+  margin-bottom: 10px;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 10px 0;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+}
+
+table td:nth-child(3),
+table td:nth-child(2) {
+  color: #6e1053;
+}
+
+table tr:nth-child(1) {
+  text-align: left;
+}
+
+table tr {
+  font-weight: 700;
+  font-size: large;
+  padding-right: 50px;
+}
+
+article {
+  display: flex;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.social a {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  float: left;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  margin: 0 10px 10px 0;
+  align-items: center;
+  padding: 6px;
+  color: #000;
+}
+
+.vk a:hover {
+  background: #5d84ae;
+  color: #fff;
+}
+.telegram a:hover {
+  background: #249bd7;
+  color: #fff;
+}
+.instagram a:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: #fff;
+}
+
+section :hover {
+  transform: scale(1.04);
+}
